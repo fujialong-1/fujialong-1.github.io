@@ -152,6 +152,63 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Maven打包问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p>使用SpringBoot搭建Web框架，打成Jar包部署，使用java -jar命令时，提示</p>
+<h6 id="xxx-jar中没有主清单属性。"><a href="#xxx-jar中没有主清单属性。" class="headerlink" title="xxx.jar中没有主清单属性。"></a>xxx.jar中没有主清单属性。</h6><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>在pom中添加一个SpringBoot的构建的插件，然后重新运行 mvn install即可。</p>
+<build>
+  <plugins>
+      <plugin>
+          <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+  </plugins>
+ </build>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/05/10/Maven%E6%89%93%E5%8C%85%E9%97%AE%E9%A2%98/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Docker容器部署Nginx服务" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -159,7 +216,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/05/04/Docker%E5%AE%B9%E5%99%A8%E9%83%A8%E7%BD%B2Nginx%E6%9C%8D%E5%8A%A1/">Docker容器部署 Nginx服务</a>
+      <a class="article-title" href="/2022/05/04/Docker%E5%AE%B9%E5%99%A8%E9%83%A8%E7%BD%B2Nginx%E6%9C%8D%E5%8A%A1/">Nginx相关</a>
     </h1>
   
 
@@ -173,7 +230,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <ul>
-<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/saneri/p/11799865.html">参考博客</a></li>
+<li><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/saneri/p/11799865.html">Docker安装Nginx</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Dk4y117tS?spm_id_from=333.337.search-card.all.click">Nginx部署静态页面</a></p>
+</li>
 </ul>
 
       
