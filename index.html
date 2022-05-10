@@ -155,16 +155,31 @@
     <article id="post-Maven打包问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/05/10/Maven%E6%89%93%E5%8C%85%E9%97%AE%E9%A2%98/">Maven打包问题</a>
+    </h1>
+  
+
+        
+        <a href="/2022/05/10/Maven%E6%89%93%E5%8C%85%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2022-05-10T03:15:07.509Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-10</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p>使用SpringBoot搭建Web框架，打成Jar包部署，使用java -jar命令时，提示</p>
-<h6 id="xxx-jar中没有主清单属性。"><a href="#xxx-jar中没有主清单属性。" class="headerlink" title="xxx.jar中没有主清单属性。"></a>xxx.jar中没有主清单属性。</h6><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>在pom中添加一个SpringBoot的构建的插件，然后重新运行 mvn install即可。</p>
+        <h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>使用SpringBoot搭建Web框架，打成Jar包部署，使用java -jar命令时，提示</p>
+<h6 id="xxx-jar中没有主清单属性"><a href="#xxx-jar中没有主清单属性" class="headerlink" title="xxx.jar中没有主清单属性"></a>xxx.jar中没有主清单属性</h6><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>在pom中添加一个SpringBoot的构建的插件，然后重新运行 mvn install即可。</p>
 <build>
   <plugins>
-      <plugin>
-          <groupId>org.springframework.boot</groupId>
-         <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
+   <plugin>
+    <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-maven-plugin</artifactId>
+   </plugin>
   </plugins>
  </build>
 
